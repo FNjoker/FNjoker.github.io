@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="第一部分：MySQL读写文件一、读文件1.load data infile ‘file_name’ into table table_name;在MySQL中执行这条语句的会出现一些错误：
+出现这个错误的原因是安装MySQL的时候限制了导入与导出的目录权限只能在规定的目录下才能导入导出。
+用show">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Hexo">
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website">
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary">
+    
+
+    <!-- Title -->
+    
+    <title>Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        
+            <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+            <section class="main">
+                
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/task3.html">
+                Untitled
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-08-23</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h1 id="第一部分：MySQL读写文件"><a href="#第一部分：MySQL读写文件" class="headerlink" title="第一部分：MySQL读写文件"></a>第一部分：MySQL读写文件</h1><h2 id="一、读文件"><a href="#一、读文件" class="headerlink" title="一、读文件"></a>一、读文件</h2><h3 id="1-load-data-infile-‘file-name’-into-table-table-name"><a href="#1-load-data-infile-‘file-name’-into-table-table-name" class="headerlink" title="1.load data infile ‘file_name’ into table table_name;"></a>1.load data infile ‘file_name’ into table table_name;</h3><p>在MySQL中执行这条语句的会出现一些错误：<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_10-58-45.png" alt="Snipaste_2019-08-13_10-58-45"></p>
+<p>出现这个错误的原因是安装MySQL的时候限制了导入与导出的目录权限只能在规定的目录下才能导入导出。</p>
+<p>用show variables like ‘%secure%’;命令查看一下：<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_11-01-33.png" alt="Snipaste_2019-08-13_11-01-33"></p>
+<p>可以看到secure_file_priv这一行是有制定的文件目录的。</p>
+<p>修改一下/etc/my.cnf文件，将secure_file_priv设置为空字段，这样就没有了限制：<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-14_23-47-27.png" alt="Snipaste_2019-08-14_23-47-27"></p>
+<p>重启下MySQL:</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_11-07-45.png" alt="Snipaste_2019-08-13_11-07-45"></p>
+<p>可以看到secure_file_priv的value值为空了。</p>
+<p>再测试下写入文件指令：<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_17-38-47.png" alt="Snipaste_2019-08-13_17-38-47"></p>
+<h3 id="2-load-file-函数"><a href="#2-load-file-函数" class="headerlink" title="2.load_file()函数"></a>2.load_file()函数</h3><p>MySQL为了方便实用，提供了load_file()函数，使用这个函数可以不用创建表，直接传递结果就行：</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_17-42-16.png" alt="Snipaste_2019-08-13_17-42-16"></p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_17-43-12.png" alt="Snipaste_2019-08-13_17-43-12"></p>
+<h3 id="3-system-cat"><a href="#3-system-cat" class="headerlink" title="3.system cat"></a>3.system cat</h3><p>在5.x版本时，可以使用系统命令直接读取文件：</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-14_23-33-50.png" alt="Snipaste_2019-08-14_23-33-50"></p>
+<p>但是此方法只能在本地读取，无法远程连接时使用。</p>
+<h2 id="二、写文件"><a href="#二、写文件" class="headerlink" title="二、写文件"></a>二、写文件</h2><p>1.select xxx into outfile ‘file_name’;</p>
+<p>在写入文件时，遇到的权限问题是个麻烦事:<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_18-03-19.png" alt="Snipaste_2019-08-13_18-03-19"></p>
+<p>出现如上报错就代表没有写入的权限。只有特定的三个目录可以写入文件：<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_18-02-58.png" alt="Snipaste_2019-08-13_18-02-58"></p>
+<p>后来我仔细查看了这几个目录的文件权限，并将自己自定义的目录权限用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -R 777 文件地址</span><br></pre></td></tr></table></figure>
+
+<p>进行修改成最高权限，依旧遇到无法写入问题。最后发现是CentOS7中的SElinux在阻止这一操作。</p>
+<p>安全增强型 Linux（Security-Enhanced Linux）简称 SELinux，它是一个 Linux 内核模块，也是 Linux 的一个安全子系统。SELinux 主要作用就是最大限度地减小系统中服务进程可访问的资源（最小权限原则）。</p>
+<p>具体关于SElinux的东西太复杂，我只学习了如何开启和关闭SElinux。</p>
+<p>临时关闭SElinux:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setenforce 0</span><br></pre></td></tr></table></figure>
+
+<p>临时开启SElinux:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setenforce 1</span><br></pre></td></tr></table></figure>
+
+<p>开机关闭，开启SElinux需要修改/etc/selinux/config文件，将SELINUX的值进行设置即可。</p>
+<p>如下可以看到，在临时关闭了SElinux之后，可以写入到自定义目录的文件中去了</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_18-10-05.png" alt="Snipaste_2019-08-13_18-10-05"></p>
+<h1 id="第二部分：学习数据库系统表的功能"><a href="#第二部分：学习数据库系统表的功能" class="headerlink" title="第二部分：学习数据库系统表的功能"></a>第二部分：学习数据库系统表的功能</h1><p>MySQL数据库中不仅可以自建数据库，还包含许多系统数据库，每个数据库中包含许多系统表用来保留系统信息。<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-27-18.png" alt="Snipaste_2019-08-13_22-27-18"></p>
+<p>Information_schema数据库是MySQL自带的，其中保存着关于MySQL服务器所维护的所有其他数据库的信息。如数据库名，数据库的表，表栏的数据类型与访问权限等。<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-29-31.png" alt="Snipaste_2019-08-13_22-29-31"><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-29-45.png" alt="Snipaste_2019-08-13_22-29-45"></p>
+<h2 id="一、SCHEMATA表"><a href="#一、SCHEMATA表" class="headerlink" title="一、SCHEMATA表"></a>一、SCHEMATA表</h2><p><strong>SCHEMATA表：</strong>提供了当前mysql实例中所有数据库的信息。</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-28-54.png" alt="Snipaste_2019-08-13_22-28-54"></p>
+<h2 id="二、TABLES表"><a href="#二、TABLES表" class="headerlink" title="二、TABLES表"></a>二、TABLES表</h2><p><strong>TABLES表：</strong>提供了关于数据库中的表的信息（包括视图）。详细表述了某个表属于哪个schema，表类型，表引擎，创建时间等信息。 </p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-36-03.png" alt="Snipaste_2019-08-13_22-36-03"></p>
+<h2 id="三、COLUMNS表"><a href="#三、COLUMNS表" class="headerlink" title="三、COLUMNS表"></a>三、COLUMNS表</h2><p><strong>COLUMNS表：</strong>提供了表中的列信息。详细表述了某张表的所有列以及每个列的信息。</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-39-17.png" alt="Snipaste_2019-08-13_22-39-17"></p>
+<h2 id="四、USER-PRIVILEGES表"><a href="#四、USER-PRIVILEGES表" class="headerlink" title="四、USER_PRIVILEGES表"></a>四、USER_PRIVILEGES表</h2><p><strong>USER_PRIVILEGES（用户权限）表：</strong>给出了关于全程权限的信息<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_22-40-33.png" alt="Snipaste_2019-08-13_22-40-33"></p>
+<h1 id="第三部分：hashcat暴力破解"><a href="#第三部分：hashcat暴力破解" class="headerlink" title="第三部分：hashcat暴力破解"></a>第三部分：hashcat暴力破解</h1><h2 id="一、获取数据库密码"><a href="#一、获取数据库密码" class="headerlink" title="一、获取数据库密码"></a>一、获取数据库密码</h2><p>在旧版本的MySQL中使用的命令是：<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_18-31-54.png" alt="Snipaste_2019-08-13_18-31-54"></p>
+<p>但可以看到在5.x版本之后这个命令会报错，原因是password字段已经不用了，改用authentication_string代替。<img src="https://fnjoker.github.io/task3/Snipaste_2019-08-13_18-33-29.png" alt="Snipaste_2019-08-13_18-33-29"></p>
+<p>通过命令可以得到Mysql数据库的密码的hash值，hash类型是sha1(sha1($pass))。</p>
+<h2 id="二、使用hashcat破解"><a href="#二、使用hashcat破解" class="headerlink" title="二、使用hashcat破解"></a>二、使用hashcat破解</h2><p>使用命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hashcat64 -a 0 -m 4500 --force mima.txt dic.txt</span><br></pre></td></tr></table></figure>
+
+<p>hashcat64是我自己的程序名，从官网上下载好的压缩包解压之后就直接有这个.exe文件，名字可以更改成喜欢的名字，只要在环境变量里添加地址就行（win10）。</p>
+<p>-a 命令代表指定破解模式 0这个参数代表字典攻击</p>
+<p>-m命令代表指定要破解的hash类型，默认是md5, 4500这个参数代表选择的hash类型是sha1(sha1($pass))</p>
+<p>mima.txt用于存放要破解的hash值</p>
+<p>dic.txt是要跑的字典</p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-14_23-05-39.png" alt="Snipaste_2019-08-14_23-05-39"></p>
+<p><img src="https://fnjoker.github.io/task3/Snipaste_2019-08-14_23-04-57.png" alt="Snipaste_2019-08-14_23-04-57"></p>
+<p>具体的关于hashcat的指令可以用hashcat –help进行查看。</p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
+</div>
+            </section>
+        
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2019/08/23/index/">Untitled</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

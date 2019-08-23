@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="一、关系型数据库和非关系型数据库1.什么是关系型数据库（1）关系型数据库是依据关系模型来创建的数据库，所谓关系模型就是指二维表格模型，就是“一对一、一对多、多对多”等关系。关系模型包括数据结构（数据存储问题，二维表）、操作指令集合（sql语句）、完整性约束（表内数据约束、表与表之间的约束）
+（2）常">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Hexo">
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website">
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary">
+    
+
+    <!-- Title -->
+    
+    <title>Hexo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        
+            <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+            <section class="main">
+                
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/task2.html">
+                Untitled
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-08-23</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h1 id="一、关系型数据库和非关系型数据库"><a href="#一、关系型数据库和非关系型数据库" class="headerlink" title="一、关系型数据库和非关系型数据库"></a>一、关系型数据库和非关系型数据库</h1><h2 id="1-什么是关系型数据库"><a href="#1-什么是关系型数据库" class="headerlink" title="1.什么是关系型数据库"></a>1.什么是关系型数据库</h2><p>（1）关系型数据库是依据关系模型来创建的数据库，所谓关系模型就是指二维表格模型，就是“一对一、一对多、多对多”等关系。关系模型包括数据结构（数据存储问题，二维表）、操作指令集合（sql语句）、完整性约束（表内数据约束、表与表之间的约束）</p>
+<p>（2）常见的关系型数据库：Oracle、DB2、PostgreSQL、Microsoft SQL Server、Microsoft Access、MySQL</p>
+<p>（3）关系型数据库的特点：安全、容易理解、不节省空间（即使某些值为空也要分配字段）</p>
+<h2 id="2-什么是非关系型数据库"><a href="#2-什么是非关系型数据库" class="headerlink" title="2.什么是非关系型数据库"></a>2.什么是非关系型数据库</h2><p>（1）非关系型数据库主要是基于“非关系模型”的数据库，非关系型数据库有列模型（存储的数据是一列列的，以一列为一个记录）、键值对模型（存储的数据是一个个“键值对”）、文档类模型（以一个个文档来存储数据）</p>
+<p>（2）常见的非关系型数据库：Hbase、redis、MemcacheDB、mongoDB</p>
+<p>（3）非关系型数据库的特点：性能高、非常容易扩展</p>
+<h1 id="二、sql语句学习"><a href="#二、sql语句学习" class="headerlink" title="二、sql语句学习"></a>二、sql语句学习</h1><h2 id="1-查改"><a href="#1-查改" class="headerlink" title="1.查改"></a>1.查改</h2><p>（1）SQL SELECT ：用于从数据库中选取数据</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT *FROM table_name;</span><br><span class="line"></span><br><span class="line">SELECT column_name FROM table_name;</span><br></pre></td></tr></table></figure>
+
+<p>（2）SQL DISTINCT SELECT：用于返回唯一不同的值</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT　DISTINCT　column_name,column_name FROM table_name;</span><br></pre></td></tr></table></figure>
+
+<p>（3）SQL WHERE：用于提取那些满足条件的记录</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name,column_name FROM table_name WHERE column_name operator value;</span><br></pre></td></tr></table></figure>
+
+<p>WHERE子句中的运算符：= 、！= 、&gt;、&lt;、&gt;=、&lt;=、BETWEEN、LIKE、IN</p>
+<p>（4）SQL SELECT TOP：用于规定要返回的记录的数目</p>
+<p>MySQL语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name(s) FROM table_name LIMIT number;</span><br></pre></td></tr></table></figure>
+
+<p>（5）SQL OREDER BY:对结果集进行排序</p>
+<p>升序语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SElECT column_name FROM table_name ORDER BY column_name;</span><br></pre></td></tr></table></figure>
+
+<p>降序语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SElECT column_name FROM table_name ORDER BY column_name DESC;</span><br></pre></td></tr></table></figure>
+
+<p>（6）SQL 别名：可以为表名称或列名称指定别名</p>
+<p>列的SQL别名语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name AS alias_name FROM table_name;</span><br></pre></td></tr></table></figure>
+
+<p>表的SQL别名语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name(s) FROM table_name AS alias_name;</span><br></pre></td></tr></table></figure>
+
+<p>（7）SQL JOIN：用于把来自两个或多个表的行结合起来<br>SQL INNER JOIN语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT  column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name=table2.column_name;</span><br></pre></td></tr></table></figure>
+
+<p>SQL LEFT JOIN语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select column_name(s) from table1 left join table2 on table1.column_name=table2.column_name;</span><br></pre></td></tr></table></figure>
+
+<p>SQL RIGHT JOIN语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select column_name(s) from table1 right join table2 on table1.column_name=table2.column_name;</span><br></pre></td></tr></table></figure>
+
+<p>sql inner join从多个表中返回满足join条件的所有行，取的是table1和table2的交集；sql left join从左表返回所有行，右表如果没有匹配则返回结果为null，相当于取得是table1+table1和table2的交集；sql right join从右表返回所有的行，左表如果没有匹配则返回结果为null，相当于取的是table2+table1和table2的交集</p>
+<p>在使用join时，on和where条件的区别如下：<br>1、on条件是在生成临时表时使用的条件，它不管on中的条件是否为真,都会返回左边表中的记录<br>2、where条件是在临时表生成好后，再对临时表进行过滤的条件。这时已经没有left join 的含义了，条件不为真的全部过滤掉。</p>
+<p>（8）SQL UNION：用于合并两个或多个select语句的结果集，union内部的每个select语句必须拥有相同数量的列，且列也必须拥有相似的数据类型，同时每个select与剧中的列的顺序必须相同。<br>SQL UNION语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select column_name(s) from table1 union select column_name(s) from table2;</span><br></pre></td></tr></table></figure>
+
+<p>union操作符选取不同的值，如果允许重复的值，使用union all</p>
+<p>（9）改边表中列的数据类型</p>
+<p>MySQL语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name MODIFY COLUMN column_name datatype;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-增"><a href="#2-增" class="headerlink" title="2.增"></a>2.增</h2><p>（1）SQL CREATE DATABASE：用于创建数据库</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE db_name;</span><br></pre></td></tr></table></figure>
+
+<p>（2）SQL CREATE TABLE ：用于创建数据库中的表</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name(</span><br><span class="line">column_name1 data_type(size),</span><br><span class="line">column_name1 data_type(size),</span><br><span class="line">column_name1 data_type(size),</span><br><span class="line">...</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>（3）SQL CREATE INDEX：用于在表中创建索引，在不读取整个表的情况下，索引使数据库应用程序可以更快的查找数据。<br>SQL CREATE INDEX语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create index index_name on table_name(column_name);</span><br></pre></td></tr></table></figure>
+
+<p>创建一个简单的索引，允许使用重复的值<br>SQL CREATE UNION INDEX语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create unique index index_name on table_name(column_name);</span><br></pre></td></tr></table></figure>
+
+<p>创建一个唯一的索引，不允许使用重复的值：唯一的索引意味着两行不能拥有相同的索引值。</p>
+<h2 id="3-删"><a href="#3-删" class="headerlink" title="3.删"></a>3.删</h2><p>（1）删除索引</p>
+<p>MySQL语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name DROP INDEX index_name;</span><br></pre></td></tr></table></figure>
+
+<p>（2）删除数据表</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE table_name;</span><br></pre></td></tr></table></figure>
+
+<p>（3）删除表内数据但不删除表</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TRUNCATE TABLE table_name;</span><br></pre></td></tr></table></figure>
+
+<p>（4）删除数据库</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP DATABASE database_name;</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、MySQL学习"><a href="#三、MySQL学习" class="headerlink" title="三、MySQL学习"></a>三、MySQL学习</h1><h2 id="1-MySQL简介"><a href="#1-MySQL简介" class="headerlink" title="1.MySQL简介"></a>1.MySQL简介</h2><p>MySQL 是一个关系型数据库管理系统，由瑞典 MySQL AB 公司开发，目前属于 Oracle 公司。MySQL 是一种关联数据库管理系统，关联数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+<ul>
+<li>MySQL 是开源的，所以你不需要支付额外的费用。</li>
+<li>MySQL 支持大型的数据库。可以处理拥有上千万条记录的大型数据库。</li>
+<li>MySQL 使用标准的 SQL 数据语言形式。</li>
+<li>MySQL 可以运行于多个系统上，并且支持多种语言。这些编程语言包括 C、C++、Python、Java、Perl、PHP、Eiffel、Ruby 和 Tcl 等。</li>
+<li>MySQL 对PHP有很好的支持，PHP 是目前最流行的 Web 开发语言。</li>
+<li>MySQL 支持大型数据库，支持 5000 万条记录的数据仓库，32 位系统表文件最大可支持 4GB，64 位系统支持最大的表文件为8TB。</li>
+<li>MySQL 是可以定制的，采用了 GPL 协议，你可以修改源码来开发自己的 MySQL 系统。</li>
+</ul>
+<h2 id="2-MySQL命令的使用"><a href="#2-MySQL命令的使用" class="headerlink" title="2.MySQL命令的使用"></a>2.MySQL命令的使用</h2><p>（1）创建数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE 数据库名；</span><br></pre></td></tr></table></figure>
+
+<p>演示，创建的数据库名为test:</p>
+<p><img src="https://fnjoker.github.io/task2/1.png" alt="1"></p>
+<p>（2）删除数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP DATABASE 数据库名；</span><br></pre></td></tr></table></figure>
+
+<p>演示，删除的数据库名为test1:</p>
+<p><img src="https://fnjoker.github.io/task2/2.png" alt="2"></p>
+<p>（3）选择数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use 数据库名；</span><br></pre></td></tr></table></figure>
+
+<p>（4）创建数据表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name(</span><br><span class="line">column_name1 data_type(size),</span><br><span class="line">column_name1 data_type(size),</span><br><span class="line">column_name1 data_type(size),</span><br><span class="line">...</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>演示，创建的数据表名为test:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">create table test(</span><br><span class="line">id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,</span><br><span class="line">xuehao VARCHAR(30) NOT NULL,</span><br><span class="line">sname VARCHAR(30) NOT NULL,</span><br><span class="line">html VARCHAR(30) NOT NULL,</span><br><span class="line">js VARCHAR(30) NOT NULL,</span><br><span class="line">caozuo VARCHAR(30) NOT NULL,</span><br><span class="line">reg_date TIMESTAMP);![3](https://fnjoker.github.io/task2/3.png)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://fnjoker.github.io/task2/3.png" alt="3"></p>
+<p>（5）删除数据表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE table_name ;</span><br></pre></td></tr></table></figure>
+
+<p>演示,删除的是myDB数据库中的数据表名为score:</p>
+<p><img src="https://fnjoker.github.io/task2/4.png" alt="4"></p>
+<p>（6）插入数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO table_name ( field1, field2,...fieldN )</span><br><span class="line">                       VALUES</span><br><span class="line">                       ( value1, value2,...valueN );</span><br></pre></td></tr></table></figure>
+
+<p>演示，向test数据库中的test数据表插入数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO test (xuehao,sname,html,js,caozuo) </span><br><span class="line">values </span><br><span class="line">(1,2,3,4,5);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://fnjoker.github.io/task2/5.png" alt="5"></p>
+<p>（7）查询数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT *FROM table_name;</span><br></pre></td></tr></table></figure>
+
+<p>演示，查询test数据表：</p>
+<p><img src="https://fnjoker.github.io/task2/6.png" alt="6"></p>
+<p>（8）正则表达式</p>
+<p>MySQl可以通过LIKE…%来进行模糊匹配，MySQL同样也支持正则表达式匹配，MySQL中使用REGEXP</p>
+<p>操作符来进行正则表达式匹配。</p>
+<p>下表中的正则模式可以用与REGEXP操作符中：<img src="https://fnjoker.github.io/task2/7.png" alt="7"></p>
+<p>演示，查出test数据表中所有以16开头的xuehao：</p>
+<p><img src="https://fnjoker.github.io/task2/8.png" alt="8"></p>
+<p><img src="https://fnjoker.github.io/task2/9.png" alt="9"></p>
+<p>（9）MySQL支持的数据类型</p>
+<p>MySQL中的数据类型主要有三种：Text 、Number 、Date/Time：</p>
+<p><img src="https://fnjoker.github.io/task2/10.png" alt="10"></p>
+<p><img src="https://fnjoker.github.io/task2/11.png" alt="11"></p>
+<p><img src="https://fnjoker.github.io/task2/12.png" alt="12"></p>
+<p>（10）sql约束用于规定表中的数据规则。如果存在违反约束的数据行为，行为会被约束终止。约束可以在创建表时规定（create table），或在创建表后规定（alter table）。</p>
+<p>约束条件有： （1）NOT NULL -指示某列不能存储NULL值<br>                        （2）UNIQUE-保证某列的每行必须有唯一的值<br>                        （3）PRIMARY KEY-NOT NULL 和 UNIQUE的结合。确保某列有唯一标识<br>                        （4）FOREIGN KEY-保证一个表中的数据匹配另一个表中的值参照完整性<br>                        （5）CHECK-保证列中的值符合制定的条件<br>                        （6）DEFAULT-规定没有给列赋值时的默认值    </p>
+<p>（11）获取MySQL基本信息时的小技巧</p>
+<p>获取版本信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select @@version；</span><br></pre></td></tr></table></figure>
+
+<p>获取当前用户：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select user();select system_user();</span><br></pre></td></tr></table></figure>
+
+<p>获取当前数据库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select database();</span><br></pre></td></tr></table></figure>
+
+<p>获取主机名：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select @@hostname;</span><br></pre></td></tr></table></figure>
+
+<p>获取数据库文件路径：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select @@datadir;</span><br></pre></td></tr></table></figure>
+
+<p>（12）创建新用户并赋予远程访问权限：</p>
+<p><img src="https://fnjoker.github.io/task2/13.png" alt="13"></p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
+</div>
+            </section>
+        
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2019/08/23/index/">Untitled</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
