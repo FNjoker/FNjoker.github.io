@@ -10,9 +10,10 @@
 
     <!--Description-->
     
-        <meta name="description" content="CentOS7安装环境LNMP（PHP7+MySQL5.7+Nginx1.16）第一步：安装CentOS7​        由于我自己的CentOS是之前安装好的，并没有记载详细的安装步骤，这里这步就不详细描述了。
+        <meta name="description" content="CentOS7安装环境LNMP（PHP7+MySQL5.7+Nginx1.16）
+第一步：安装CentOS7​        由于我自己的CentOS是之前安装好的，并没有记载详细的安装步骤，这里这步就不详细描述了。
 第二步：安装Nginx​        1.修改yum源
-​        #yum">
+​        #yu">
     
 
     <!--Author-->
@@ -167,16 +168,18 @@
         
 
         <!-- Post Content -->
-        <h1 id="CentOS7安装环境LNMP（PHP7-MySQL5-7-Nginx1-16）"><a href="#CentOS7安装环境LNMP（PHP7-MySQL5-7-Nginx1-16）" class="headerlink" title="CentOS7安装环境LNMP（PHP7+MySQL5.7+Nginx1.16）"></a>CentOS7安装环境LNMP（PHP7+MySQL5.7+Nginx1.16）</h1><h2 id="第一步：安装CentOS7"><a href="#第一步：安装CentOS7" class="headerlink" title="第一步：安装CentOS7"></a>第一步：安装CentOS7</h2><p>​        由于我自己的CentOS是之前安装好的，并没有记载详细的安装步骤，这里这步就不详细描述了。</p>
+        <p>CentOS7安装环境LNMP（PHP7+MySQL5.7+Nginx1.16）</p>
+<h2 id="第一步：安装CentOS7"><a href="#第一步：安装CentOS7" class="headerlink" title="第一步：安装CentOS7"></a>第一步：安装CentOS7</h2><p>​        由于我自己的CentOS是之前安装好的，并没有记载详细的安装步骤，这里这步就不详细描述了。</p>
 <h2 id="第二步：安装Nginx"><a href="#第二步：安装Nginx" class="headerlink" title="第二步：安装Nginx"></a>第二步：安装Nginx</h2><p>​        1.修改yum源</p>
 <p>​        #yum localinstall <a href="http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm" target="_blank" rel="noopener">http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</a></p>
-<pre><code>2.安装Nginx![nginx1](https://fnjoker.github.io/task1/nginx1.jpg)</code></pre><p>​        3.启动nginx<img src="https://fnjoker.github.io/task1/nginx3.png" alt="nginx3"></p>
+<pre><code>2.安装Nginx</code></pre><p><img src="https://fnjoker.github.io/task1/nginx1.jpg" alt="nginx1"></p>
+<p>​        3.启动nginx<img src="https://fnjoker.github.io/task1/nginx3.png" alt="nginx3"></p>
 <p>​        4.测试是否安装成功</p>
 <p>​        访问自己的ip地址，如果出现如下界面证明成功。    <img src="https://fnjoker.github.io/task1/nginx4.png" alt="nginx4"></p>
 <p>​        注：查看本机ip地址的方法：使用命令ifconfig.</p>
 <h2 id="第三步：安装PHP"><a href="#第三步：安装PHP" class="headerlink" title="第三步：安装PHP"></a>第三步：安装PHP</h2><p>​        1.查看当前系统中是否已经安装了PHP</p>
 <p>​        2.有低版本的先将低版本卸载</p>
-<p><img src="https://fnjoker.github.io/task1/PHP1.png" alt="PHP1"><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/PHP2.png" alt="PHP2"><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/PHP3.png" alt="PHP3"></p>
+<p><img src="https://fnjoker.github.io/task1/PHP1.png" alt="PHP1"><img src="https://fnjoker.github.io/task1/PHP2.png" alt="PHP2"><img src="https://fnjoker.github.io/task1/PHP3.png" alt="PHP3"></p>
 <p>​        3.安装最新的Remi源自动安装文件</p>
 <p>​        yum install <a href="http://rpms.famillecollet.com/enterprise/remi-release-7.rpm" target="_blank" rel="noopener">http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</a></p>
 <p>​        4.安装PHP的相关控件</p>
@@ -197,42 +200,42 @@
 <p>​        3.在官网上下载rpm文件</p>
 <p>​        命令 ：wget <a href="https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm" target="_blank" rel="noopener">https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</a></p>
 <p>​        4.安装下载的rpm文件</p>
-<p>​        命令：rpm -ivh mysql57-community-release-el7-11.noarch.rpm<img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/mysql3.png" alt="mysql3"></p>
+<p>​        命令：rpm -ivh mysql57-community-release-el7-11.noarch.rpm<img src="https://fnjoker.github.io/task1/mysql3.png" alt="mysql3"></p>
 <p>​        5.安装数据库</p>
 <p>​        命令：yum install mysql-community-server</p>
-<p>​        6.启动mysql服务并获取初始密码        <img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/mysql4.png" alt="mysql4"></p>
+<p>​        6.启动mysql服务并获取初始密码        <img src="https://fnjoker.github.io/task1/mysql4.png" alt="mysql4"></p>
 <p>​        7.登陆mysql</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/mysql5.jpg" alt="mysql5"></p>
+<p><img src="https://fnjoker.github.io/task1/mysql5.jpg" alt="mysql5"></p>
 <p>​        8.修改初始密码</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/mysql8.png" alt="mysql8"></p>
+<p><img src="https://fnjoker.github.io/task1/mysql8.png" alt="mysql8"></p>
 <p>​        注：mysql5.7默认安装了密码安全检查插件，设置密码的时候必须大写字母，小写字母，数字，特殊符号都有，并且长度不少于8位。</p>
 <p>​        9.修改/etc/my.cnf配置文件，配置默认编码为utf8</p>
-<p>![mysql6 - 副本](<a href="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/mysql6" target="_blank" rel="noopener">https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/mysql6</a> - 副本.png)</p>
+<p>![mysql6 - 副本](<a href="https://fnjoker.github.io/task1/mysql6" target="_blank" rel="noopener">https://fnjoker.github.io/task1/mysql6</a> - 副本.png)</p>
 <p>​        10.重启并设置开机自启动</p>
 <p>​        命令：systemctl restart mysqld</p>
 <p>​                    systemctl enable mysqld</p>
 <h2 id="第五步：配置Nginx"><a href="#第五步：配置Nginx" class="headerlink" title="第五步：配置Nginx"></a>第五步：配置Nginx</h2><p>​        1.配置防火墙</p>
 <p>​        修改/etc/firewalld/zones/public.xml文件，增加如下一行代码</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/firewalld.png" alt="firewalld"></p>
+<p><img src="https://fnjoker.github.io/task1/firewalld.png" alt="firewalld"></p>
 <p>​        2.修改Nginx配置</p>
-<p>​        nginx的配置文件是/etc/nginx/nginx.conf<img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/nginxconf.png" alt="nginxconf"></p>
+<p>​        nginx的配置文件是/etc/nginx/nginx.conf<img src="https://fnjoker.github.io/task1/nginxconf.png" alt="nginxconf"></p>
 <p>​        原本应该在nginx.conf文件中增加server的，不知道什么原因会报错，于是我发现conf.d文件夹中的.conf文件都可以被nginx.conf调用,故我在conf.d文件夹里新建了一个php.conf文件，配置信息如下</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/conf.png" alt="conf"></p>
+<p><img src="https://fnjoker.github.io/task1/conf.png" alt="conf"></p>
 <p>​        3.配置完成后重启Nginx并设置开机自启动        </p>
 <p>​        命令：systemctl start nginx</p>
 <p>​                    systemctl enable nginx</p>
 <h2 id="第六步：测试"><a href="#第六步：测试" class="headerlink" title="第六步：测试"></a>第六步：测试</h2><p>​        1.测试一下能否运行php代码</p>
 <p>​        首先我建立了一个phpinfo.php文件在我的服务器文件夹/usr/share/nginx/html ，然后打开浏览器在地址栏输入<a href="http://127.0.0.1/phpinfo.php" target="_blank" rel="noopener">http://127.0.0.1/phpinfo.php</a> 如图可以看到代码执行成功测试通过。</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801160541.jpg" alt="QQ图片20190801160541"></p>
+<p><img src="https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801160541.jpg" alt="QQ图片20190801160541"></p>
 <p>phpinfo.php代码如下：</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801160548.png" alt="QQ图片20190801160548"></p>
+<p><img src="https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801160548.png" alt="QQ图片20190801160548"></p>
 <p>​        2.测试php连接mysql</p>
-<p>​        <img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161007.jpg" alt="QQ图片20190801161007"></p>
+<p>​        <img src="https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161007.jpg" alt="QQ图片20190801161007"></p>
 <p>​        3.测试php执行mysql语句</p>
 <p>​        在这部分测试中，我设计了一个添加学生成绩到数据库中的页面，如果数据库中有我添加的数据就可以证明php执行mysql成功。</p>
-<p>​        <img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161346.jpg" alt="QQ图片20190801161346"></p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161727.jpg" alt="QQ图片20190801161727"></p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161607.png" alt="QQ图片20190801161607"></p>
+<p>​        <img src="https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161346.jpg" alt="QQ图片20190801161346"></p>
+<p><img src="https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161727.jpg" alt="QQ图片20190801161727"></p>
+<p><img src="https://fnjoker.github.io/task1/QQ%E5%9B%BE%E7%89%8720190801161607.png" alt="QQ图片20190801161607"></p>
 <p>​        可以看到数据库中存放着我输入进去的数据，测试成功。</p>
 <p>index1.php代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt;学生成绩表&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;a href=&quot;add.html&quot;&gt;添加成绩&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">    header(&quot;content-type:text/html;charset=utf-8&quot;);</span><br><span class="line">    </span><br><span class="line">	$servername = &quot;localhost&quot;;</span><br><span class="line">	$username = &quot;root&quot;;</span><br><span class="line">	$password = &quot;Asdfgh123!&quot;;</span><br><span class="line">	$dbName = &quot;myDB&quot;;</span><br><span class="line">	$conn= new mysqli($servername, $username, $password,$dbName);</span><br><span class="line">	if($conn-&gt;connect_error)&#123;</span><br><span class="line">	        die(&quot;Connection failed:&quot;.$conn-&gt;connect_error);</span><br><span class="line"></span><br><span class="line">	&#125; </span><br><span class="line">	mysql_select_db(&quot;myDB&quot;);</span><br><span class="line">    </span><br><span class="line">	mysql_query(&quot;set names utf8&quot;);</span><br><span class="line">    </span><br><span class="line">	$sql = &quot;select * from score1&quot;;</span><br><span class="line">    </span><br><span class="line">	$res = mysql_query($sql);</span><br><span class="line">    </span><br><span class="line">	while($data = mysql_fetch_assoc($res))&#123;</span><br><span class="line">        </span><br><span class="line">	$arr[] = $data;</span><br><span class="line">    </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; width=&quot;500&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        </span><br><span class="line">	&lt;td&gt;学号&lt;/td&gt;</span><br><span class="line">        </span><br><span class="line">	&lt;td&gt;姓名&lt;/td&gt;</span><br><span class="line">        </span><br><span class="line">	&lt;td&gt;html成绩&lt;/td&gt;</span><br><span class="line">        </span><br><span class="line">	&lt;td&gt;js成绩&lt;/td&gt;</span><br><span class="line">        </span><br><span class="line">	&lt;td&gt;操作&lt;/td&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">&lt;?php</span><br><span class="line">        </span><br><span class="line">	foreach($arr as $v)&#123;  ?&gt;</span><br><span class="line">            </span><br><span class="line">		&lt;tr&gt;</span><br><span class="line">                </span><br><span class="line">			&lt;td&gt;&lt;?php echo $v[&quot;id&quot;]?&gt;&lt;/td&gt;</span><br><span class="line">  </span><br><span class="line">			 &lt;td&gt;&lt;?php echo $v[&quot;xuehao&quot;]?&gt;&lt;/td&gt;</span><br><span class="line">              </span><br><span class="line">			&lt;td&gt;&lt;?php echo $v[&quot;sname&quot;]?&gt;&lt;/td&gt;</span><br><span class="line">                			&lt;td&gt;&lt;?php echo $v[&quot;html&quot;]?&gt;&lt;/td&gt;</span><br><span class="line">                </span><br><span class="line">			&lt;td&gt;&lt;?php echo $v[&quot;js&quot;]?&gt;&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">			&lt;td&gt;&lt;?php echo $v[&quot;caozuo&quot;]?&gt;&lt;/td&gt;</span><br><span class="line">   </span><br><span class="line">               </span><br><span class="line">			&lt;td&gt;&lt;a href=&quot;del.php?id=&lt;?php echo $v[&quot;id&quot;]?&gt;&quot;&gt;删除&lt;/a&gt;|&lt;a href=&quot;update.php?id=&lt;?php echo $v[&quot;id&quot;]?&gt;&quot;&gt;修改&lt;/a&gt;&lt;/td&gt;</span><br><span class="line">            		&lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">	&lt;?php    &#125;</span><br><span class="line">    </span><br><span class="line">	?&gt;</span><br><span class="line"></span><br><span class="line">&lt;/table&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">    td&#123;</span><br><span class="line">        </span><br><span class="line">		text-align: center;</span><br><span class="line">    </span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
@@ -257,26 +260,26 @@
 <p>​        解决方法：nginx -t可以查看配置文件的错误信息，这一步ok了重启还是有错误可以pkill -9 nginx关掉进程再重启。</p>
 <h2 id="加固"><a href="#加固" class="headerlink" title="加固"></a>加固</h2><p>​        1.关闭服务器标记</p>
 <p>​        如果开启的话所有的错误页面都会显示服务器的版本和信息</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA.png" alt="加固"></p>
+<p><img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA.png" alt="加固"></p>
 <p>​        2.自定义缓存</p>
 <p>​        设置自定义缓存用来限制缓冲区溢出攻击(写在http{server{…}})</p>
-<p>​        <img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA10.png" alt="加固10"></p>
+<p>​        <img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA10.png" alt="加固10"></p>
 <p>​        3.设置timeout来抵御DOS攻击</p>
-<p>​    <img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA2.png" alt="加固2"></p>
+<p>​    <img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA2.png" alt="加固2"></p>
 <p>​        4.配置日志</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA1.png" alt="加固1"></p>
+<p><img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA1.png" alt="加固1"></p>
 <p>​        5.屏蔽ip</p>
 <p>​        使用geoip模块封杀除制定国家以外国家的ip,可以过滤大部分来自国外的恶意扫描或者无用访问。</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA6.png" alt="加固6"></p>
+<p><img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA6.png" alt="加固6"></p>
 <p>​        6.封杀各种user-agent（浏览器标识）</p>
 <p>​        每个正常的web请求都包含用户浏览器信息，除非经过伪装恶意扫描工具，一般都会在user-agent里留下某些特征字眼，比如scan,nmap.我们用正则匹配特殊字眼来达到过滤的目的。</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA7.png" alt="加固7"></p>
+<p><img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA7.png" alt="加固7"></p>
 <p>​        7.封杀特定的文件扩展名</p>
-<p>​    <img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA8.png" alt="加固8"></p>
+<p>​    <img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA8.png" alt="加固8"></p>
 <p>​        8.限制访问的方法</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA5.png" alt="加固5"></p>
+<p><img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA5.png" alt="加固5"></p>
 <p>​        9.url参数过滤敏感字</p>
-<p><img src="https://fnjoker.github.io/task1/https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA9.png" alt="加固9"></p>
+<p><img src="https://fnjoker.github.io/task1/%E5%8A%A0%E5%9B%BA9.png" alt="加固9"></p>
 
     </div>
 
@@ -314,7 +317,15 @@
         <ul>
             
             <li>
-                <a class="footer-post" href="/2019/08/23/index/">Untitled</a>
+                <a class="footer-post" href="/2019/08/23/index3/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/08/23/index2/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/08/23/index1/">Untitled</a>
             </li>
             
         </ul>
