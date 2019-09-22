@@ -45,7 +45,7 @@
 
     <!-- Title -->
     
-    <title>Hexo</title>
+    <title>第六周任务</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -85,41 +85,10 @@
         <ul>
             
             <li class="menu-item">
-                <a href="/">
+                <a href="https://fnjoker.github.io">
                     Home
                 </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/archives">
-                    Archives
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/about.html">
-                    About
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/tags">
-                    Tags
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/categories">
-                    Categories
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/contact.html">
-                    Contact
-                </a>
-            </li>
-            
+           
         </ul>
     </div>
 </div>
@@ -150,12 +119,12 @@
     <div class="post-header">
         <h1 class="title">
             <a href="/task6.html">
-                Untitled
+                第六周任务
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2019-09-22</span>
+                <span class="date">2019-09-02</span>
             
             
             
@@ -265,15 +234,15 @@
 <p>（1）floor()</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select count(*) from information_schema.tables group by concat(version(),floor(rand(0)*2));</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C20180920152859520.png" alt="20180920152859520"></p>
+<p><img src="https://fnjoker.github.io/task6/20180920152859520.png" alt="20180920152859520"></p>
 <p>(2)extractvalue()</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from users where id=1 and (extractvalue(1,concat(0x7e,(select user()),0x7e)));</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C20180920152210223.png" alt="20180920152210223"></p>
+<p><img src="https://fnjoker.github.io/task6/20180920152210223.png" alt="20180920152210223"></p>
 <p>(3)updatexml()</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from users where id=1 and (updatexml(1,concat(0x7e,(select user()),0x7e),1));</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5C20180920152257851.png" alt="20180920152257851"></p>
+<p><img src="https://fnjoker.github.io/task6/20180920152257851.png" alt="20180920152257851"></p>
 <h2 id="php-MySQL注入查表语句与查字段语句"><a href="#php-MySQL注入查表语句与查字段语句" class="headerlink" title="php+MySQL注入查表语句与查字段语句"></a>php+MySQL注入查表语句与查字段语句</h2><p>查表语句格式：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,2,3,table_name from(select * from information_schema.tables where table_schema = 数据库名的hex order by table_schema limit 6,7)t limit 1</span><br></pre></td></tr></table></figure>
 
@@ -343,14 +312,14 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlmap.py -r head.txt --dbs</span><br></pre></td></tr></table></figure>
 
 <p>参考链接：<a href="https://www.cnblogs.com/hongfei/p/3872156.html" target="_blank" rel="noopener">https://www.cnblogs.com/hongfei/p/3872156.html</a></p>
-<h1 id="第三部分：tamper脚本"><a href="#第三部分：tamper脚本" class="headerlink" title="第三部分：tamper脚本"></a>第三部分：tamper脚本</h1><p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-46-17.png" alt="Snipaste_2019-09-21_21-46-17"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-46-39.png" alt="Snipaste_2019-09-21_21-46-39"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-47-00.png" alt="Snipaste_2019-09-21_21-47-00"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-48-21.png" alt="Snipaste_2019-09-21_21-48-21"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-48-43.png" alt="Snipaste_2019-09-21_21-48-43"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-48-57.png" alt="Snipaste_2019-09-21_21-48-57"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-49-17.png" alt="Snipaste_2019-09-21_21-49-17"></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2019-09-21_21-49-25.png" alt="Snipaste_2019-09-21_21-49-25"></p>
+<h1 id="第三部分：tamper脚本"><a href="#第三部分：tamper脚本" class="headerlink" title="第三部分：tamper脚本"></a>第三部分：tamper脚本</h1><p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-46-17.png" alt="Snipaste_2019-09-21_21-46-17"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-46-39.png" alt="Snipaste_2019-09-21_21-46-39"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-47-00.png" alt="Snipaste_2019-09-21_21-47-00"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-48-21.png" alt="Snipaste_2019-09-21_21-48-21"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-48-43.png" alt="Snipaste_2019-09-21_21-48-43"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-48-57.png" alt="Snipaste_2019-09-21_21-48-57"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-49-17.png" alt="Snipaste_2019-09-21_21-49-17"></p>
+<p><img src="https://fnjoker.github.io/task6/Snipaste_2019-09-21_21-49-25.png" alt="Snipaste_2019-09-21_21-49-25"></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>​        第一次接触这些，几周下来依旧只学习了很浅显的一些东西，大部分学习的SQL注入的方法都没来的及复现，以后会慢慢补充，tamper脚本也没学如何编写，只收集了一些tamper脚本的功能描述，这点也是以后需要补充的，说到底欠缺的太多加学习能力有点差，慢慢补吧。</p>
 <h2 id="参考链接或资料"><a href="#参考链接或资料" class="headerlink" title="参考链接或资料"></a>参考链接或资料</h2><p>sqlmap使用详解：<a href="https://www.cnblogs.com/hongfei/p/3872156.html" target="_blank" rel="noopener">https://www.cnblogs.com/hongfei/p/3872156.html</a></p>
 <p>参考书籍：<a href="https://pan.baidu.com/s/1O4Y9l7qyfCtCw_hCzY1oUA" target="_blank" rel="noopener">https://pan.baidu.com/s/1O4Y9l7qyfCtCw_hCzY1oUA</a></p>
@@ -375,146 +344,7 @@
 </div>
 
 <!-- Footer -->
-<div class="push"></div>
 
-<footer class="footer-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
-                <h2>About</h2>
-                <p>
-                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
-                </p>
-            </div>
-            
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
-        <h2>Recent Posts</h2>
-        <ul>
-            
-            <li>
-                <a class="footer-post" href="/2019/09/08/index3/">Untitled</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2019/09/08/index2/">Untitled</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2019/09/08/index1/">Untitled</a>
-            </li>
-            
-        </ul>
-    </div>
-
-
-
-            
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <ul class="list-inline footer-social-icons">
-                    
-                    <li class="list-inline-item">
-                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-github"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/?lang=en">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-twitter"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-facebook"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://dribbble.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-dribbble"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://plus.google.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-google-plus"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://www.behance.net/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-behance"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://500px.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-500px"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="mailto:test@example.com">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-envelope-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="\#">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-rss"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="footer-copyright">
-                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 <!-- After footer scripts -->
 
