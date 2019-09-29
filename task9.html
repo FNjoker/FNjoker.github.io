@@ -122,7 +122,7 @@
     <div class="post-header">
         <h1 class="title">
             <a href="/task9.html">
-                Untitled
+                第九周任务
             </a>
         </h1>
         <div class="post-info">
@@ -140,7 +140,7 @@
         
 
         <!-- Post Content -->
-        <h1 id="DNS解析过程"><a href="#DNS解析过程" class="headerlink" title="DNS解析过程"></a>DNS解析过程</h1><p><img src="https://FNjoker.github.io/4e4a20a4462309f72ac61ab6720e0cf3d6cad6ed.jpg" alt="4e4a20a4462309f72ac61ab6720e0cf3d6cad6ed"></p>
+        <h1 id="DNS解析过程"><a href="#DNS解析过程" class="headerlink" title="DNS解析过程"></a>DNS解析过程</h1><p><img src="https://FNjoker.github.io/task9/4e4a20a4462309f72ac61ab6720e0cf3d6cad6ed.jpg" alt="4e4a20a4462309f72ac61ab6720e0cf3d6cad6ed"></p>
 <p>解析顺序</p>
 <p>1）浏览器缓存</p>
 <p>　　当用户通过浏览器访问某域名时，浏览器首先会在自己的缓存中查找是否有该域名对应的IP地址（若曾经访问过该域名且没有清空缓存便存在）；</p>
@@ -159,7 +159,7 @@
 <p>​        主域名服务器查询到对应的IP地址后，会返回给本地域名服务器</p>
 <p>8）保存结果至缓存</p>
 <p>　　本地域名服务器把返回的结果保存到缓存，以备下一次使用，同时将该结果反馈给客户端，客户端通过这个IP地址与web服务器建立链接。</p>
-<h1 id="web页面请求流程图"><a href="#web页面请求流程图" class="headerlink" title="web页面请求流程图"></a>web页面请求流程图</h1><p><img src="https://FNjoker.github.io/Snipaste_2019-09-29_20-51-38.png" alt="Snipaste_2019-09-29_20-51-38"></p>
+<h1 id="web页面请求流程图"><a href="#web页面请求流程图" class="headerlink" title="web页面请求流程图"></a>web页面请求流程图</h1><p><img src="https://FNjoker.github.io/task9/Snipaste_2019-09-29_20-51-38.png" alt="Snipaste_2019-09-29_20-51-38"></p>
 <h1 id="Nginx处理请求的11个阶段"><a href="#Nginx处理请求的11个阶段" class="headerlink" title="Nginx处理请求的11个阶段"></a>Nginx处理请求的11个阶段</h1><p>Nginx 处理请求的过程一共划分为 11 个阶段，按照执行顺序依次是 post-read、server-rewrite、find-config、rewrite、post-rewrite、preaccess、access、post-access、try-files、content 以及 log。</p>
 <p>1、post-read</p>
 <p>最先执行的 post-read 阶段在 Nginx 读取并解析完请求头（request headers）之后就立即开始运行</p>
@@ -197,15 +197,15 @@
 <p>（4）实体首部字段（Entity Header Fields）</p>
 <p>针对请求报文和响应报文的实体部分使用的首部。补充了资源内容更新时间等与实体相关的信息</p>
 <p>3.HTTP/1.1 首部字段一览</p>
-<p><img src="https://FNjoker.github.io/Snipaste_2019-09-27_11-40-31.png" alt="Snipaste_2019-09-27_11-40-31"></p>
-<p><img src="https://FNjoker.github.io/Snipaste_2019-09-27_11-41-55.png" alt="Snipaste_2019-09-27_11-41-55"></p>
-<p><img src="https://FNjoker.github.io/Snipaste_2019-09-27_11-42-12.png" alt="Snipaste_2019-09-27_11-42-12"></p>
-<p><img src="https://FNjoker.github.io/Snipaste_2019-09-27_11-42-21.png" alt="Snipaste_2019-09-27_11-42-21"></p>
+<p><img src="https://FNjoker.github.io/task9/Snipaste_2019-09-27_11-40-31.png" alt="Snipaste_2019-09-27_11-40-31"></p>
+<p><img src="https://FNjoker.github.io/task9/Snipaste_2019-09-27_11-41-55.png" alt="Snipaste_2019-09-27_11-41-55"></p>
+<p><img src="https://FNjoker.github.io/task9/Snipaste_2019-09-27_11-42-12.png" alt="Snipaste_2019-09-27_11-42-12"></p>
+<p><img src="https://FNjoker.github.io/task9/Snipaste_2019-09-27_11-42-21.png" alt="Snipaste_2019-09-27_11-42-21"></p>
 <h2 id="0x00-通用首部字段"><a href="#0x00-通用首部字段" class="headerlink" title="0x00 通用首部字段"></a>0x00 通用首部字段</h2><p>1.Cache-Control</p>
 <p>通过指定首部字段Cache-Control指令，就能操作缓存的工作机制</p>
 <p>Cache-Control指令一览</p>
-<p><img src="https://FNjoker.github.io/QQ%E5%9B%BE%E7%89%8720190927161157.jpg" alt="QQ图片20190927161157"></p>
-<p><img src="https://FNjoker.github.io/QQ%E5%9B%BE%E7%89%8720190927161137.jpg" alt="QQ图片20190927161137"></p>
+<p><img src="https://FNjoker.github.io/task9/QQ%E5%9B%BE%E7%89%8720190927161157.jpg" alt="QQ图片20190927161157"></p>
+<p><img src="https://FNjoker.github.io/task9/QQ%E5%9B%BE%E7%89%8720190927161137.jpg" alt="QQ图片20190927161137"></p>
 <p>2.Connection</p>
 <p>Connection首部字段具有两个作用：（1）控制不再转发给代理的首部字段（2）管理持久连接</p>
 <p>控制代理不在转发的首部字段用法</p>
